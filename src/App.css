@@ -1,0 +1,168 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.App{
+  font-family: 'Raleway', sans-serif;
+  background-color:rgb(214, 214, 214);
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  background-color:white;
+  /* background-color:lightgreen; */
+  display:flex;
+  flex-direction: column;
+  height:90vh;
+  width:90vw;  
+  overflow: auto;
+  /* border:1px solid red; */
+  border-radius:.5em;
+
+}
+
+/* .container{
+  background-color:lightgreen;
+} */
+.input{
+  align-self: center;
+  width:96%;
+  display:flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.submit {
+  /* align-self: center; */
+  width:96%;
+  height:2.5em;
+  /* padding-left:15px; */
+  font-size: 1.75em;
+  border:none;
+
+  text-decoration: none;
+  outline:none;
+
+}
+
+.submit::placeholder{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.submit:focus{
+  text-decoration:none;
+  border:none;
+  outline:none;
+}
+
+
+.card{
+  display:flex;
+  flex-direction: column;
+  align-items: right;
+  border-bottom:1px solid rgba(0, 0, 0, 0.185);
+  padding:15px;
+  min-height:150px;
+  background-color:white;
+  /* border:solid 1px red; */
+  position:relative;
+}
+
+.avatar{
+  margin-left: 30px;
+  height: 8em;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius:50%;
+  position:sticky;
+}
+
+.content{
+  padding:10px;
+  margin-left:15px;
+  /* border:1px solid green; */
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.mainContent{
+  display:flex;
+  /* border:solid 1px red; */
+}
+
+.name{
+  text-transform: uppercase;
+}
+
+.details{
+  line-height:1.5em;
+  font-weight:400;
+  margin-left:15px;
+}
+
+.testScores{
+  margin-left:195px;
+  margin-top:10px;
+}
+
+.btn{
+  position:absolute;
+  right:40px;
+  top:25px;
+  width:50px;
+  height: 50px;
+  background-color:white;
+  border:none;
+  cursor:pointer;}
+
+.btn-img{
+  border:none;
+  height:50px;
+}
+
+.tagField{
+  margin-left: 195px;
+  margin-top:10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.tag{
+  background-color:rgba(128, 128, 128, 0.37);
+  margin-right:8px;
+  padding:5px 10px;
+  border-radius: 5px;;
+}
+
+.tagElements{
+  display:flex;
+}
+
+
+.tagInput{
+  outline:none;
+  border:none;
+  color:black;
+}
+
+.tagInput::placeholder{
+  font-size:16px;
+  color:grey;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.tagDivUnderline{
+  border-bottom:1px solid rgba(0, 0, 0, 0.185);
+  padding:12px 0;
+}
+
