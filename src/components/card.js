@@ -5,15 +5,17 @@ import minus from '../images/minus-solid.png'
 
 
 export default function Card(props) {
-
+    //CARD STATE
     const [stateTag, setStateTag] = useState({value:'', id:null});
 
+    //FUNCTION TO HANDLE CHANGE IN TAG INPUT BOX
     const handleTagChange=(e)=>{
         setStateTag(prev=>{
             return {...prev, value: e.target.value, id: e.target.id}
     })
   }
 
+  //FUNCTION TO HANDLE TAG SUBMIT
     const handleTagSubmit = (e)=>{
         props.addTag(stateTag)
         setStateTag({value:'', id:null})
